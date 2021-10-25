@@ -1,0 +1,89 @@
+<?php
+	include("conexion.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SmartSoft Academy</title>
+	<link rel="shortcut icon" href="images/Logo.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+<body>
+<header id="cabecera">
+		<h1>SmartSoft Academy</h1>
+		<img src="images/Logo.png" id="logo" >
+		<div id="barraNaveacion" class="reinicio">
+		<nav>
+			<ul>
+				<input type="button" class="botonNav" onclick="location.href='catalogo.html';" value="Inicio" />
+			</ul>
+		</nav>
+		</div>
+	</header>
+<main>
+	<h2><b>Nuestros cursos</b></h2>
+	<section id="carrusel" class="container">
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/java.jpg" class="d-block w-100" alt="Imangen java">
+    </div>
+    <div class="carousel-item">
+      <img src="images/python.jpg" class="d-block w-100" alt="Imagen python">
+    </div>
+    <div class="carousel-item">
+      <img src="images/html.jpg" class="d-block w-100" alt="Imagen html">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+	<h2><b>Catalogo de cursos</b></h2>	
+	<div id="catalogo">
+		<div class="cursos">
+			<p class="descripcionCurso"><b>Curso:</b> HTML desde cero</p>
+			<p class="descripcionCurso"><b>Duración:</b> 2 semanas</p>
+			<p class="descripcionCurso"><b>Descripción:</b>Aprender a diseñar páginas web impresionantes para generar ingresos, nunca fue tan fácil</p>
+			<p align="right">
+				<button type="button" class="btn btn-primary"><a href="informacionCursoHtml.html" class="colorLetraBoton">Más información</a></button>
+		</div>
+		<div class="cursos">
+			<p class="descripcionCurso"><b>Curso:</b> Java para principiantes</p>
+			<p class="descripcionCurso"><b>Duración:</b> 2 semanas</p>
+			<p class="descripcionCurso"><b>Descripción:</b> En este curso Aprenderás a programar en el lenguaje de programación Java, con un curso 30% teórico, 70% practico.</p>
+			<p align="right">
+				<button type="button" class="btn btn-primary"><a href="informacionCursoJava.html" class="colorLetraBoton">Más información</a></button>
+			</p>
+		</div>
+		<div class="cursos">
+			<p class="descripcionCurso"><b>Curso:</b> Python para principiantes</p>
+			<p class="descripcionCurso"><b>Duración:</b> 3 semanas</p>
+			<p class="descripcionCurso"><b>Descripción:</b> Aprende a programar con clases y objetos, a usar ficheros y bases de datos SQLite, interfaces gráficas y más con Python!</p>
+			<p align="right">
+				<button type="button" class="btn btn-primary"><a href="informacionCursoPayton.html" class="colorLetraBoton">Más información</a></button>
+			</p>
+		</div>
+	</div>
+</main>
+<footer>
+	<div id="volverAlHeader">
+	<p align="center"><b><a id="colorFooter" href="#cabecera">SMARTSOFT ACADEMY</a></b></p>
+	</div>
+</footer>
+</body>
+</html>
