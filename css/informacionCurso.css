@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background: #24C6DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'PT Sans', sans-serif;
+}
+#cabecera{
+	background-image: url(../images/fondopurpura.jpg);
+	background-size: 100% 100%;
+	height: 300px;
+	margin-top:0%;
+}
+ul{
+	margin: 0px;
+}
+
+h1{
+	text-align: center	;
+	color: white;
+	font-size: 70px;
+}
+
+#logo{
+	float: right;
+	width: 142px;
+}
+
+#id_aprendisaje{
+	margin-left: 1%;
+
+}
+
+main{
+margin-bottom: 2%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.reinicio{
+	clear: both;
+}
+
+#colorFooter{
+	color: black;
+}
+#volverAlHeader{
+	animation: slideOutUp;
+}
+
+#volverAlHeader{
+	animation: slideOutUp;
+}
+
+#curso{
+    color: #fff;
+    display: inline-block;
+    position: relative;
+
+}
+#marco1{
+   background-color: #24C6DC;
+    padding: 20px 30px;
+    width:100%;
+    height: 820px;
+    border: 2px solid #000;
+    /*left: 80px;*/
+}
+.grid1{
+    display: grid;
+    width: 100%;
+    height: 40%;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
+}
+.grid2{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 40% 20%;
+}
+.item{
+    
+}
+.item2{
+    
+}
+#marcoDescripcion{
+    /*display:inline-block;*/
+    background-color: #514A9D;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    overflow-y: scroll;
+    padding: 20px;
+}
+#marcoDurCom{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30%;
+}
+#id_complejidad{
+    display: inline-block;
+    text-align: center;
+}
+#id_duracion{
+    display: inline-block;
+    text-align: center;
+}
+#marco4{
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+#marco5{
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+
+.botonNav{
+background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+width: 100px;
+}
+/*.contenedor{
+    display: inline;
+}*/
