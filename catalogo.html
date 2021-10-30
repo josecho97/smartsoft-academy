@@ -1,6 +1,4 @@
-<?php
-	include("conexion.php");
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,18 +15,25 @@
 
 </head>
 <body>
-<header id="cabecera">
-		<h1>SmartSoft Academy</h1>
-		<img src="images/Logo.png" id="logo" >
-		<div id="barraNaveacion" class="reinicio">
+<div class="container-fluid">
+	<div class="row"> 
+<header id="cabecera" class="col-sm12">
+	<img src="images/Logo.png" id="logo" align="right">
+		<h1>SmartSoft Academy</h1>	
+		<div id="barraNaveacion" class="reinicio col-sm12">
+			<div class="row">
 		<nav>
 			<ul>
 				<input type="button" class="botonNav" onclick="location.href='catalogo.html';" value="Inicio" />
 			</ul>
 		</nav>
 		</div>
+		</div>
 	</header>
+	</div>
+</div>	
 <main>
+	<div class="container-fluid">
 	<h2><b>Nuestros cursos</b></h2>
 	<section id="carrusel" class="container">
 	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -51,31 +56,37 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+  </div>
 </div>
 </section>
-	<h2><b>Catalogo de cursos</b></h2>	
-	<div id="catalogo">
+	<h2><b>Catálogo de cursos</b></h2>	
+	<div id="catalogo" class="container">
 		<div class="cursos">
 			<p class="descripcionCurso"><b>Curso:</b> HTML desde cero</p>
 			<p class="descripcionCurso"><b>Duración:</b> 2 semanas</p>
 			<p class="descripcionCurso"><b>Descripción:</b>Aprender a diseñar páginas web impresionantes para generar ingresos, nunca fue tan fácil</p>
 			<p align="right">
-				<button type="button" class="btn btn-primary"><a href="informacionCursoHtml.html" class="colorLetraBoton">Más información</a></button>
+				<!--<button type="button" class="btn btn-primary" onclick="location.href='informacionCursoHtml.html';"><a href="informacionCursoHtml.html" class="colorLetraBoton">Más información</a></button>-->
+				<button type="button" class="btn btn-primary boton" onclick="location.href='informacionCursoHtml.html';">Más informacion</button>
 		</div>
 		<div class="cursos">
 			<p class="descripcionCurso"><b>Curso:</b> Java para principiantes</p>
 			<p class="descripcionCurso"><b>Duración:</b> 2 semanas</p>
 			<p class="descripcionCurso"><b>Descripción:</b> En este curso Aprenderás a programar en el lenguaje de programación Java, con un curso 30% teórico, 70% practico.</p>
 			<p align="right">
-				<button type="button" class="btn btn-primary"><a href="informacionCursoJava.html" class="colorLetraBoton">Más información</a></button>
-			</p>
+				
+				<!--<button type="button" class="btn btn-primary" onclick="location.href='informacionCursoJava.html';"><a href="informacionCursoJava.html" class="colorLetraBoton">Más información</a></button>-->
+				<button type="button" class="btn btn-primary boton" onclick="location.href='informacionCursoJava.html';">Más informacion</button>
+		</p>
 		</div>
 		<div class="cursos">
 			<p class="descripcionCurso"><b>Curso:</b> Python para principiantes</p>
 			<p class="descripcionCurso"><b>Duración:</b> 3 semanas</p>
 			<p class="descripcionCurso"><b>Descripción:</b> Aprende a programar con clases y objetos, a usar ficheros y bases de datos SQLite, interfaces gráficas y más con Python!</p>
 			<p align="right">
-				<button type="button" class="btn btn-primary"><a href="informacionCursoPayton.html" class="colorLetraBoton">Más información</a></button>
+	
+				<!--<button type="button" class="btn btn-primary boton" onclick="location.href='informacionCursoPayton.html';"><a href="informacionCursoPayton.html" class="colorLetraBoton">Más información</a></button>-->
+				<button type="button" class="btn btn-primary boton" onclick="location.href='informacionCursoPayton.html';">Más informacion</button>
 			</p>
 		</div>
 	</div>

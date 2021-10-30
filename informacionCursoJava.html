@@ -11,25 +11,31 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/informacionCurso.css">
-
+    
 </head>
 <body>
-    <header id="cabecera">
-		<h1>SmartSoft Academy</h1>
-		<img src="images/Logo.png" id="logo" >
-		<div id="barraNaveacion" class="reinicio">
-		    <nav>
-			    <ul>
-				<input type="button" class="botonNav" onclick="location.href='catalogo.html';" value="Inicio" />
-			    </ul>
-		    </nav>
-		</div>
-    </header>
+    
+    <div class="row"> 
+        <header id="cabecera" class="col-sm12">
+            <img src="images/Logo.png" id="logo" align="right">
+                <h1>SmartSoft Academy</h1>	
+                <div id="barraNaveacion" class="reinicio col-sm12">
+                    <div class="row">
+                <nav>
+                    <ul>
+                        <input type="button" class="botonNav" onclick="location.href='catalogo.html';" value="Inicio" />
+                    </ul>
+                </nav>
+                </div>
+                </div>
+            </header>
+            </div>
+
     <main>
         <br>
         <h2 id="curso"><b> Curso: Java para principiantes</b> </h2>
         <div id="marco1">
-           <h2>Descripción mas completa</h2>
+           <h2>Descripción más completa</h2>
                 <div class="grid1">
                 <div class="item">
                     <div id="marcoDescripcion">
@@ -45,7 +51,7 @@
                         </label>
                         <br>
                         <label >
-                            <h3>Complejidad: Basico</h3>
+                            <h3>Complejidad: Básico</h3>
                         </label>
                     </div> 
                 </div>
@@ -67,15 +73,18 @@
                     </div>
                     <div class="item2">
                         <div id="marco5">
-                            <h3 >Conocimientos previos</h3>
-                            <ul >
-                                 <li>No se requiere ningún conocimiento previo, empezaremos desde cero!</li>
-                            </ul>
+                            <h3 >Conocimientos previo:</h3>
+                            <div class="conocimientosPrevios">
+                                <ul >
+                                    <li>No se requiere ningún conocimiento previo, empezaremos desde cero!</li>
+                                    
+                               </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="item2"></div>
                 </div>
-
+                
         </div>
 
     </main>
