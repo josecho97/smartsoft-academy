@@ -10,7 +10,7 @@ body{
 #cabecera{
 	background-image: url(../images/fondopurpura.jpg);
 	background-size: 100% 100%;
-	height: 300px;
+	height: 220px;
 	margin-top:0%;
 }
 ul{
@@ -21,22 +21,22 @@ li{
 	padding: 30px;
 }
 h1{
-	text-align: center	;
+	text-align: center;
 	color: white;
 	font-size: 70px;
+	margin-left: 15%;
 }
 .navegadores{
 	color: white;
 }
 #logo{
-	float: right;
 	width: 142px;
 }
 #catalogo{
 	border: solid;
 	background-color: #6930C3;
-	margin-left: 20%;
-	margin-right: 20%;
+	/*margin-left: 20%;
+	margin-right: 20%;*/
 	height: 570px;
 	overflow-y: scroll;
 
@@ -45,10 +45,10 @@ h1{
 	border: solid;
 	background-color: #5390D9;
 	height: 200px;
-	margin-left: 5%;
-	margin-right: 5%;
+	/*margin-left: 5%;
+	margin-right: 5%;*/
 	margin-top: 5%;
-	margin-bottom:5%;
+	/*margin-bottom:5%;*/
 }
 .descripcionCurso{
 	color: white;
@@ -62,8 +62,9 @@ h2{
 	background-color: #80FFDB;
 	margin-right: 5%;
 	margin-bottom: 5%;
+	color: blue;
+	
 }
-
 #carrusel{
 	width: 950px;
 }
@@ -97,3 +98,5 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
 color: white;
 width: 100px;
 }
+
+
