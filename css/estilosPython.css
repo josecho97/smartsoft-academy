@@ -2,7 +2,8 @@
 body{
 	margin: 0;
 	padding: 0;
-    background-image: url(../images/prueba.jpg);
+    /*background-image: url(../images/prueba.jpg);*/
+    background-color: floralwhite;
     background-size: 100% 100%;
 	font-family: 'PT Sans', sans-serif;
 }
@@ -60,8 +61,8 @@ h1{
 	font-size: 20px;
 }
 h2{
-	margin-left: 20%;
-	color: white;
+    background-color: #bebebe;
+    margin-top: 0%;
 }
 .btn-primary{
 	background-color: #80FFDB;
@@ -136,4 +137,7 @@ background-image:url(../images/pythonCatalogo.png);
 #derechoReservado{
 	color: whitesmoke;
 	margin-left: 10px;
+}
+.contenido{
+    background-color: #d3d3d3;
 }
