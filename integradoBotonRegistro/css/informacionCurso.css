@@ -121,7 +121,6 @@ li{
 }
 .queAprenderas::-webkit-scrollbar{
     width: 2px;
-    background: #24C6DC;
 }
 
 .conocimientosPrevios{
@@ -132,7 +131,6 @@ li{
 }
 .conocimientosPrevios::-webkit-scrollbar{
     width: 2px;
-    background: #24C6DC;
 }
 #marco5{
     width: 100%;
