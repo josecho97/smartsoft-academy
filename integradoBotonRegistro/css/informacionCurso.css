@@ -168,9 +168,11 @@ li{
     background: #4776E6;  
     background: -webkit-linear-gradient(to right, #8E54E9, #4776E6); 
     background: linear-gradient(to right, #8E54E9, #4776E6);
-    width: 175px;
+    width: 170px;
     height: 50px;
     margin-top: 300px;
+    margin-right: 20px;
+    float:right;
 }
 footer{
     background-color: #2B0DBF;
@@ -266,6 +268,7 @@ footer{
         height: 40px;
         margin-left: 25%;
         margin-top: 0px;
+        float:none; 
     }
     
 }
