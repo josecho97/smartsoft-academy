@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/Fondo.png);
+	background-size: 100% 100%;
+	font-family: 'PT Sans', sans-serif;
+}
+
+div.logotype{
+  color: #fff;
+}
+.titulo{
+ margin-top: 140px;
+}
+
+ul{
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-size: 70px;
+	margin-left: 15%;
+}
+
+#python{
+	width: 250px;
+	animation: pulse;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+#moduloCurso{
+	border: solid;
+	background: linear-gradient(to right,#8570e2,#0927ce);
+	height: calc(100vh - 348px);
+	overflow-y: scroll;
+
+}
+
+.contenidoModulos {
+	margin-left: 0;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;	
+}
+
+h2{
+	margin-left: 20%;
+	color: rgb(242, 242, 247);
+	font-size: 40px;
+}
+h3{
+	color: rgb(242, 242, 247);
+	font-size: 30px;
+}
+p{
+	color: rgb(3, 3, 14);*/
+	font-size: 20px;
+}
+
+
+#carrusel{
+	width: 950px;
+}
+main{
+margin-bottom: 2%;
+}
+
+.reinicio{
+	clear: both;
+}
+#colorFooter{
+	color: whitesmoke;
+}
+#volverAlHeader{
+	animation: slideOutUp;
+}
+
+li{
+	/*margin-top: 0%;
+	padding-top: 1%;
+	font-size: 	30px;*/
+	display: inline-block;
+	padding: 30px;
+} 
+.boton {
+	background: rgb(31, 11, 141);
+	-webkit-border-radius: 38;
+  	-moz-border-radius: 38;
+  	border-radius: 10px;text-shadow: 1px 2px 1px #9daef5;
+  	-webkit-box-shadow: 6px 5px 24px #666666;
+  	-moz-box-shadow: 6px 5px 24px #666666;
+  	box-shadow: 6px 5px 25px #666666;font-family:sans-serif ;
+  	color: #fafafa;
+  	font-size: 15px;
+  	padding: 10px;
+  	text-decoration: none;
+  	cursor: pointer;
+}
+.boton:hover{
+	background: #125763;
+}
+
+.botonNav{
+	background: #4776E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	width: 110px;
+}
+.botonNav:hover{
+		background: #7700BE;
+}
+
+footer{
+    background-color: #2B0DBF;
+    height: 114px;
+}
+.footerMenu{
+    color: whitesmoke;
+}
+#derechoReservado {
+	color: whitesmoke;
+	margin-left: 10px;
+}
+
+.formatoModulos{
+	color: black;
+	font-size: 20px;
+}
+.formatoModulos:hover{
+	color: white;
+}
+ .fondoImagen{
+	margin: 30px;
+	 background-color: whitesmoke;
+	 border-radius: 40px;
+ }
+
+ .formatoModulosHTML:hover{
+color: orange;
+ }
+ .formatoModulosPython:hover{
+	color: yellow;
+}
+ul{
+	margin: 0px;
+}
+li{
+	display: inline-block;
+	margin-top: 0%;
+	padding-top: 1%;
+	font-size: 	20px;
+}
