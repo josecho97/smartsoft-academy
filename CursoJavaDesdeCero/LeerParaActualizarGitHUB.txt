@@ -1,0 +1,1 @@
+A esta carpeta se añade y se borra antes de subir al github todos los archivos
