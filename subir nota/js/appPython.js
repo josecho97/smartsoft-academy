@@ -47,110 +47,103 @@ let bandera = false;
 let quizArray = [
   {
     question:
-      "1. Java es un lenguaje de propósito:_____",
-    options: ["General", "Privado", "Indeterminado", "Maléfico", "Ninguno"],
+      "1. Python es un lenguaje _____",
+    options: ["Interpretado", "Privado", "Indeterminado", "Todas son correctas", "Ninguno"],
     correct: 0,
-    image: "./assets/imagenes/java/1java.png",
+    image: "./assets/imagenes/python/1python.jfif",
   },
   {
-    question: "2. ¿En qué sistemas operativos es soportado Java?",
+    question: "2. En Pyhton las variables son ______",
     options: [
-      "Todas son correctas",
-      "MacOS",
-      "Unix",
-      "Windows"
+      "Etiquetas",
+      "Tipo JavaScript",
+      "Lineas de Comando individuales",
+      "Interfaces fa0/0"
           ],
     correct: 0,
-    image: "./assets/imagenes/java/2java.jpg",
+    image: "./assets/imagenes/python/2python.gif",
   },
   {
     question:
-      "3. ¿Qué es Java?",
+      "3. ¿Cómo podemos crear una cadena de caracteres en Python?",
     options: [
-      "Lenguaje de Programación",
-      "Lengua muy desconocida",
-      "Soporte multifuncional",
-      "Plataforma sin igual"
+      "Encerrando el contenido entre comillas",
+      "Creando un repositorio de letras",
+      "Con la Super Clase Object",
+      "Usando Firebase"
     ],
     correct: 0,
-    image: "./assets/imagenes/java/3java.png",
+    image: "./assets/imagenes/python/3python.png",
   },
     {
-    question: "4. ¿En cualquier Sistema Operativo se debe instalar?",
+    question: "4. ¿Se puede declarar variables con el mismo nombre de una palabara reservada?",
     options: [
-      "Java Development kit JDK",
-      "VMWare 15.0 o superior",
-      "Librerias Java",
-      "Eclipse",
-      "Netbeans"
+      "No",
+      "Si",
+      "Depende del contexto",
+      "Depende del compilador",
+      "Si, en el caso de variables globales"
     ],
     correct: 0,
-    image: "./assets/imagenes/java/4java.png",
+    image: "./assets/imagenes/python/4python.png",
   },
   {
     question:
-      "5. ¿Qué es Intellij IDEA?",
+      "5. ¿Cómo son tratados los comentarios cuando se ejecuta un programa?",
     options: [
-      "Integrated Development Environment IDE",
-      "Ideas Inteligentes para Software",
-      "Software gestor de redes",
-      "Agente Inteligente",
+      "Son ignorados",
+      "Son traducidos a 0 y 1 binarios",
+      "El compilador lo traduce a un lenguaje máquina",
+      "Como funciones especiales",
     ],
     correct: 0,
-    image: "./assets/imagenes/java/5java.png",
+    image: "./assets/imagenes/python/5python.jpg",
   },
   {
     question:
-      "6. Todas los programas en Java deben ser tener un método:",
+      "6. ¿Qué definen los tipos de datos?",
     options: [
-      "Main",
-      "Responsable",
-      "Recursivo",
-      "Getter and Setter",
+      "Un conjunto de valores",
+      "Un rango diferencial exponencial",
+      "Un dato sesgado de probabilidad",
+      "Un valor esperado de la Teoría de Juegos",
     ],
     correct: 0,
-    image: "./assets/imagenes/java/6java.jpg",
+    image: "./assets/imagenes/python/6python.png",
   },
   {
-    question: "7. ¿Cuál es la estructura de una variable?",
-    options: ["[privacidad] tipo_variable identificador", 
-              "[public] tipo_variable identificador", 
-              "[private] tipo_variable identificador", 
-              "[static] tipo_variable identificador"],
+    question: "7. ¿De las siguientes cuáles son sentencias condicionales?",
+    options: ["If, elif, else", 
+              "Do while", 
+              "For", 
+              "Switch"],
     correct: 0,
-    image: "./assets/imagenes/java/7java.png",
+    image: "./assets/imagenes/python/7python.png",
   },
   {
-    question: "8. Una de las formas de leer datos por consola es:",
-    options: ["System.console().readLine()", 
-              "System.console().write()", 
-              "System.console().printf()", 
-              "System.console().toString()"],
+    question: "8. Qué permite la estructura de control If..elif..elif",
+    options: ["La ejecución de multiples condiciones", 
+              "La ejecución aleatoria de cada una", 
+              "La ejecición de un bucle implicito", 
+              "La ejecución de ciclos anidados"],
     correct: 0,
-    image: "./assets/imagenes/java/8java.png",
-  },
-  {
-    question:
-      "9. Algunos ciclos de repeteción en java son:",
-    options: ["Todas son correctas", "For","Do While","While"],
-    correct: 0,
-    image: "./assets/imagenes/java/9java.png",
+    image: "./assets/imagenes/python/8python.jpg",
   },
   {
     question:
-      "10. De las siguientes ¿Cuál es una sentencia condicional?",
-    options: ["If", "for", "String", "Do While", "main"],
+      "9. Una estructura condicional dentro de otra es una ______",
+    options: ["Condicional anidada", "Condicional tipo Switch","Función no anidada","Condicional limitada"],
     correct: 0,
-    image: "./assets/imagenes/java/10java.png",
+    image: "./assets/imagenes/python/9python.png",
   },
   {
-    question: "11. Complete: Java es un lenguaje de programación orientado a _______",
-    options: ["Objetos", "Módulos", "Estructuras no dinámicas","Bases de Datos"],
+    question:
+      "10. ¿Se puede escribir sentencias dentro de una condicional anidada?",
+    options: ["Si", "No", "Depende del compilador", "Depende del IDE", "Una vez si, otras no"],
     correct: 0,
-    image: "./assets/imagenes/java/informatica1.gif",
+    image: "./assets/imagenes/python/10python.png",
   },
-
- 
+  
 ];
 
 
@@ -458,16 +451,17 @@ function gameOver(cause) {
 function addToHighscores() {
   
  /* alert(correctScore);*/
-  //window.alert("Su puntuación es :"+correctScore);
-  window.location = './php/registrarNotajava.php?nota='+correctScore;
+//  window.alert("Su puntuación es :"+correctScore);
+   window.location = './php/registrarNotapython.php?nota='+correctScore;
+
  
   //if(correctScore >= 5 ){ //document.getElementById("startBtn").aria-pressed ="false" ;
   //alert(startBtn);
   //startBtn.disable.setAttribute(false);
-  // }
- // bandera = true; 
+ //  }
+  //bandera = true; 
   //init();
- // window.location.href = 'pantalla1TestJava.html';
+  //window.location.href = 'pantalla1TestPython.html';
 
   /*
   var highScoreElement = document.createElement("li");

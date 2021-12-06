@@ -21,6 +21,9 @@ let initials = document.querySelector("#initials");
 let clearHighscoresBtn = document.querySelector("#clearHighscoresBtn");
 let image_area = document.querySelector("#image_area");
 
+
+
+
 /* ------- Global Variable Declarations ------- */
 
 let totalSeconds = 120;
@@ -35,118 +38,114 @@ var localHighscoresArray = [];
 let time = setInterval(timer, 1000);
 let justRegistered = false;
 clearInterval(time);
+let bandera = false;
 
 /* --------------- Quiz Array --------------- */
 
 // Questions based on: laffgaff "DISNEY TRIVIA QUESTIONS AND ANSWERS": https://laffgaff.com/disney-trivia-questions-answers/
+
 let quizArray = [
   {
     question:
-      "1. ¿Java es un lenguaje de propósito?",
-    options: ["General", "Privado", "Indeterminado", "Maléfico", "Ninguno"],
+      "1. HTML es un lenguaje básico para _____",
+    options: ["Crear sitios Web", "Crear programas de escritorio", "Análisis de Bases de Datos", "Eclipse", "Ninguno"],
     correct: 0,
-    image: "./assets/imagenes/java/1java.png",
+    image: "./assets/imagenes/html/1html.png",
   },
   {
-    question: "2. ¿En qué sistemas operativos es soportado Java?",
+    question: "2. ¿Qué indica la etiqueta DOCTYPE?",
     options: [
-      "Todas son correctas",
-      "MacOS",
-      "Unix",
-      "Windows"
+      "La versión de código HTML",
+      "Indica el Head de la aplicación",
+      "El link padre de la etiqueta Meta",
+      "Indica el inicio de un párrafo"
           ],
     correct: 0,
-    image: "./assets/imagenes/java/2java.jpg",
+    image: "./assets/imagenes/html/2html.png",
   },
   {
     question:
-      "3. ¿Qué es Java?",
+      "3. ¿Cuál de los siguientes es una etiqueta de texto?",
     options: [
-      "Lenguaje de Programación",
-      "Lengua muy desconocida",
-      "Soporte multifuncional",
-      "Plataforma sin igual"
+      "<h1></h1>",
+      "<video></video>",
+      "<link href=''></link>",
+      "<section></section>"
     ],
     correct: 0,
-    image: "./assets/imagenes/java/3java.png",
+    image: "./assets/imagenes/html/3html.png",
   },
     {
-    question: "4. ¿En cualquier Sistema Operativo se debe instalar?",
+    question: "4. ¿De los siguientes cuál es una etiqueta de enlace?",
     options: [
-      "Java Development kit JDK",
-      "VMWare 15.0 o superior",
-      "Librerias Java",
-      "Eclipse",
-      "Netbeans"
+      "<a></a>",
+      "<p></p>",
+      "<div></div>",
+      "<Head></Head>",
+      "<body></body>"
     ],
     correct: 0,
-    image: "./assets/imagenes/java/4java.png",
+    image: "./assets/imagenes/html/4html.png",
   },
   {
     question:
-      "5. ¿Qué es Intellij IDEA?",
+      "5. ¿Qué tipo de listas existe en HTML?",
     options: [
-      "Integrated Development Environment IDE",
-      "Ideas Inteligentes para Software",
-      "Software gestor de redes",
-      "Agente Inteligente",
+      "Listas ordenadas y desordenadas",
+      "Listas desordenadas",
+      "Listas ordenadas",
+      "Listas enlazadas y doblemente enlazadas",
     ],
     correct: 0,
-    image: "./assets/imagenes/java/5java.png",
+    image: "./assets/imagenes/python/5python.jpg",
   },
   {
     question:
-      "6. Todas los programas en Java deben ser tener un método:",
+      "6. ¿Qué permite crear CSS?",
     options: [
-      "Main",
-      "Responsable",
-      "Recursivo",
-      "Getter and Setter",
+      "Una estructura de contenido",
+      "Una sintáxis restrictiva",
+      "Metadatos",
+      "Una estructura orientada a objetos",
     ],
     correct: 0,
-    image: "./assets/imagenes/java/6java.jpg",
+    image: "./assets/imagenes/html/6html.png",
   },
   {
-    question: "7. ¿Cuál es la estructura de una variable?",
-    options: ["[privacidad] tipo_variable identificador", 
-              "[public] tipo_variable identificador", 
-              "[private] tipo_variable identificador", 
-              "[static] tipo_variable identificador"],
+    question: "7. ¿Qué son los metadatos?",
+    options: ["Son datos que describen datos", 
+              "Son información clasificada", 
+              "Son una colección de objetos", 
+              "Son una serie de estadísticas"],
     correct: 0,
-    image: "./assets/imagenes/java/7java.png",
+    image: "./assets/imagenes/html/7html.jpg",
   },
-  {
-    question: "8. Una de las formas de leer datos por consola es:",
-    options: ["System.console().readLine()", 
-              "System.console().write()", 
-              "System.console().printf()", 
-              "System.console().toString()"],
+   {
+    question: "8. ¿Qué son las tablas en HTML?",
+    options: ["Conjunto de celdas organizadas en filas", 
+              "Conjunto de referencias anidadas", 
+              "Una matriz ergódica", 
+              "Una matriz de estado absorbente"],
     correct: 0,
-    image: "./assets/imagenes/java/8java.png",
-  },
-  {
-    question:
-      "9. Algunos ciclos de repeteción en java son:",
-    options: ["Todas son correctas", "For","Do While","While"],
-    correct: 0,
-    image: "./assets/imagenes/java/9java.png",
+    image: "./assets/imagenes/html/8html.ico",
   },
   {
     question:
-      "10. De las siguientes ¿Cuál es una sentencia condicional?",
-    options: ["If", "for", "String", "Do While", "main"],
+      "9. ¿Qué etiqueta inserta una imagen en HTML?",
+    options: ["<img></img>", "<p></p>","<a href=''></a>","<ol></ol>"],
     correct: 0,
-    image: "./assets/imagenes/java/10java.png",
+    image: "./assets/imagenes/html/9html.jpg",
   },
   {
-    question: "11. Complete: Java es un lenguaje de programación orientado a _______",
-    options: ["Objetos", "Módulos", "Estructuras no dinámicas","Bases de Datos"],
+    question:
+      "10. ¿Qué se puede apreciar en la etiqueta body?",
+    options: ["Textos, vínculos e imagenes", "Pie de página", "Encabezado", "Sección derechos reservados", "Metadatos"],
     correct: 0,
-    image: "./assets/imagenes/java/informatica1.gif",
+    image: "./assets/imagenes/html/10html.png",
   },
-
- 
+  
 ];
+
 
 /* ------------- Event Management ------------- */
 
@@ -168,6 +167,7 @@ init();
 /* ------------- Functions Declaration ------------- */
 
 function init() {
+
   timeSpan.textContent = timeRemining;
   quiz.style.display = "none";
   allDone.style.display = "none";
@@ -187,6 +187,10 @@ function init() {
   justRegistered = false;
   timeSpan.textContent = timeRemining;
 
+  if(bandera){ 
+    //alert("Bandera");
+    document.getElementById("startBtn").disabled = true;}
+
   if (localStorage.getItem("highscore")) {
     localHighscoresArray = localStorage.getItem("highscore").split(",");
   }
@@ -195,10 +199,14 @@ function init() {
 
   allDone.firstElementChild.setAttribute("class", "alert alert-info mt-0 mb-0");
   submit.setAttribute("class", "btn btn-info");
+  
+  volverRendirPrueba.setAttribute("class", "btn btn-info");
+
   progressBar.firstElementChild.setAttribute(
     "class",
     "progress-bar bg-info progress-bar-striped progress-bar-animated"
   );
+
 }
 
 function startQuiz() {
@@ -246,13 +254,26 @@ function showQuestion() {
     questionBtn.textContent = quizArray[currentQuestion].options[i];
     answersDiv.append(questionBtn);
     indexArray.push(i);
+
   }
 
+  
   answersDiv.childNodes.forEach(function (child) {
     var rndIndex = Math.floor(Math.random() * indexArray.length);
     answersDiv.append(answersDiv.children[rndIndex]);
     indexArray.splice(rndIndex, 1);
   });
+
+  /*mostrar resp correcta*/
+/*  var newLabel = document.createElement('label');
+
+newLabel.className += "col-md-3 control-label";
+newLabel.innerHTML ="Test";
+//agregando el label
+var contenedor = document.getElementById('contenedor');
+contenedor.appendChild(newLabel);
+*/
+
 }
 
 function disableQuestions() {
@@ -274,6 +295,9 @@ function disableQuestions() {
   });
 }
 
+function disableEnviar(){
+  document.getElementById("submit").disabled = true;
+}
 function assesSelection(event) {
   if (event.target.matches("button")) {
     var index = parseInt(event.target.getAttribute("data-index"));
@@ -282,12 +306,15 @@ function assesSelection(event) {
     if (event.target.getAttribute("correct") === "yes") {
       displayFTAlert(true);
       correctAnswers++;
+      
+      
     } else {
       discountSeconds += 3;
       clearInterval(time);
       time = setInterval(timer, 1000);
       displayFTAlert(false);
     }
+   
     currentQuestion++;
     updateProgress();
 
@@ -304,33 +331,36 @@ function assesSelection(event) {
     }, timeInterval);
   }
 }
-
+/*EDUARDO AQUI ESTA EL CODIGO DE LA BARRA DE PROGRESO*/
 function updateProgress() {
   progress = Math.floor((currentQuestion / quizArray.length) * 100);
   var styleStr = String("width: " + progress + "%; height: 100%;");
   progressBar.firstElementChild.setAttribute("style", styleStr);
   progressBar.firstElementChild.textContent = progress + " %";
   correctScore = Math.floor((correctAnswers / quizArray.length) * 100);
-  
 }
 
 function displayFTAlert(correct) {
   if (correct) {
-    audioCorrect.play();
+   /* audioCorrect.play();*/
+  //document.getElementById("Respuesta").innerHTML = "Correcta";  
     assesFT.setAttribute(
       "class",
       "alert alert-success mt-0 mb-0 pt-0 pb-0 text-center"
     );
-    assesFT.innerHTML = "<strong>Correct</strong>";
+    assesFT.innerHTML = "<strong>Correcto</strong>";
     assesFT.style.display = "block";
+    
   } else {
-    audioIncorrect.play();
+    /*audioIncorrect.play();*/
+    //document.getElementById("Respuesta").innerHTML = "Incorrecta";
+
     assesFT.setAttribute(
       "class",
       "alert alert-danger mt-0 mb-0 pt-0 pb-0 text-center"
     );
     assesFT.innerHTML =
-      "<strong>Incorrect. </strong> 3 secs. discounted. Keep trying!!";
+      "<strong>Incorrecto: </strong> 3 seg descontados";
     assesFT.style.display = "block";
     timeSpan.style.color = "red";
     setTimeout(function () {
@@ -341,6 +371,7 @@ function displayFTAlert(correct) {
 
 function removeQuestionsButtons() {
   questionH5.textContent = "";
+ // document.getElementById("Respuesta").innerHTML = ""; 
   var child = answersDiv.lastElementChild;
   while (child) {
     answersDiv.removeChild(child);
@@ -352,6 +383,10 @@ function removeQuestionsButtons() {
 }
 
 function gameOver(cause) {
+  /*
+  if(correctScore < 51 ){
+    disableEnviar();
+  }*/
   if (cause === "questions_done") {
     console.log("QUESTIONS DONE");
     setTimeout(() => {
@@ -359,32 +394,33 @@ function gameOver(cause) {
         "class",
         "alert alert-dark mt-0 mb-0 pt-0 pb-0 text-center"
       );
-      assesFT.innerHTML = "<strong>Quiz finished</strong> Good luck!";
+      assesFT.innerHTML = "<strong>Cuestionario completado</strong>";
     }, 1500);
     clearInterval(time);
   } else if (cause === "time_out") {
     console.log("TIME OUT");
     disableQuestions();
-    audioTollingBell.play();
+    /*audioTollingBell.play(); */
+    disableEnviar();
     setTimeout(() => {
-      audioTollingBell.pause();
+     /* audioTollingBell.pause();*/
     }, 4000);
     assesFT.setAttribute(
       "class",
       "alert alert-info mt-0 mb-0 pt-0 pb-0 text-center"
     );
-    assesFT.innerHTML = "<strong>Time finished</strong> Good luck!";
+    assesFT.innerHTML = "<strong>Tiempo Finalizado</strong>";
   } else {
     return false;
   }
   assesFT.style.display = "block";
   if (correctScore >= 70) {
     setTimeout(() => {
-      audioApplause.play();
+      /*audioApplause.play();*/
     }, 5000);
   } else {
     setTimeout(() => {
-      audioThunder.play();
+      /*audioThunder.play(); */
       allDone.firstElementChild.setAttribute(
         "class",
         "alert alert-danger mt-0 mb-0"
@@ -394,6 +430,7 @@ function gameOver(cause) {
         "progress-bar bg-danger progress-bar-striped progress-bar-animated"
       );
       submit.setAttribute("class", "btn btn-danger");
+      volverRendirPrueba.setAttribute("class", "btn btn-danger");
     }, 5000);
   }
   setTimeout(function () {
@@ -403,6 +440,7 @@ function gameOver(cause) {
     assesFT.style.display = "none";
     removeQuestionsButtons();
   }, 5000);
+
 }
 
 /* GILMAR AQUI ESTA GUARDADO EL VALOR DEL TEST */
@@ -411,10 +449,21 @@ function gameOver(cause) {
 /*Cuando presiona el boton enviar llama a la funcion addToHighscores()*/
 
 function addToHighscores() {
+  
+ /* alert(correctScore);*/
+  //window.alert("Su puntuación es :"+correctScore);
+  window.location = './php/registrarNotahtml.php?nota='+correctScore;
 
-  window.location = './php/registrarNota.php?nota='+correctScore; 
-  
-  
+ 
+ // if(correctScore >= 5 ){ //document.getElementById("startBtn").aria-pressed ="false" ;
+  //alert(startBtn);
+  //startBtn.disable.setAttribute(false);
+  // }
+ // bandera = true; 
+  //init();
+ // window.location.href = 'pantalla1TestPython.html';
+
+  /*
   var highScoreElement = document.createElement("li");
   var highscoreStr = initials.value + " - " + correctScore;
   localHighscoresArray.push(highscoreStr);
@@ -424,12 +473,15 @@ function addToHighscores() {
   localStorage.setItem("highscore", localHighscoresArray);
   justRegistered = true;
   initials.value = "";
+  */
 
   // Modal
  /* $("#staticBackdrop").modal("show");*/
+
 }
 
 function loadHighScores() {
+ /*
   var tempHighscoresArray = [];
   var tempHighscoresObject = {};
   var tempHighscoresObjectsArray = [];
@@ -539,10 +591,12 @@ function loadHighScores() {
     localStrScore = "";
     tempHighscoresObject = {};
   }
+*/
 }
 
 function clearHighscores() {
+  /*
   localHighscoresArray = [];
   localStorage.setItem("highscore", localHighscoresArray);
-  loadHighScores();
+  loadHighScores(); */
 }

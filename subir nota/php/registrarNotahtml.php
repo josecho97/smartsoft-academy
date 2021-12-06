@@ -2,12 +2,11 @@
 <?php
     include("conexion.php");
 	include("sesionIniciada.php");
-	
 
     $nota = $_REQUEST['nota'];
 	
 	if($nota > 50){
-		$C = 'Java';
+		$C = 'HTML';
 		$ID = $nomUsuario.'-'.$C;
 		
 		$sql= "UPDATE clase SET nota='$nota', estado='completo' WHERE idClase='$ID'";
@@ -18,7 +17,7 @@
 			//header("location:../informacionCursoHtml.html");
 		}
 	}else{
-		$C = 'Java';
+		$C = 'HTML';
 		$ID = $nomUsuario.'-'.$C;
 		$sql= "DELETE FROM clase WHERE idClase='$ID'";
 		if(mysqli_query($conexion,$sql)){
