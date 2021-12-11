@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    /*background-image: url(../images/prueba.jpg);*/
+    background-color: floralwhite;
+    background-size: 100% 100%;
+    font-family: 'PT Sans', sans-serif;
+    height: 400px;
+}
+
+.titulo{
+  padding-top: 10px;
+}
+
+div.logotype{
+  color: #fff;
+}
+
+ul{
+    margin: 0px;
+}
+li{
+    display: inline-block;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    margin-left: 15%;
+}
+.navegadores{
+    color: white;
+}
+#logo{
+    /*float: right;*/
+    width: 142px;
+}
+
+#catalogo{
+    border: solid;
+    /*background-color: #6930C3;*/
+    /*background: #24C6DC;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,#8570e2,#0927ce);
+    /*margin-left: 20%;
+    margin-right: 2*/
+    height: 350px;
+    width:  70%;
+    overflow-y: scroll;
+
+}
+.cursos{
+    border: solid;
+    background-color: #5390D9;
+    height: 305px;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
+    margin-top: 5%;
+    /*margin-bottom:5%;*/
+}
+.descripcionCurso{
+    color: black;
+    margin-left: 1%;
+    font-size: 20px;
+}
+h2{
+    background-color: #bebebe;
+    margin-top: 0%;
+    text-align: center;
+}
+.btn-primary{
+    background-color: #80FFDB;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    color: blue;
+    
+}
+#carrusel{
+    width: 950px;
+}
+main{
+margin-bottom: 2%;
+}
+
+.reinicio{
+    clear: both;
+}
+#colorFooter{
+    color: whitesmoke;
+}
+#volverAlHeader{
+    animation: slideOutUp;
+}
+/*#barraNavegacion{
+    margin-top: 0%;
+}*/
+
+li{
+    margin-top: 0%;
+    padding-top: 1%;
+    font-size:  20px;
+    margin-left: 17px;
+    margin-right: 17px;
+    align-content: space-around;
+} 
+
+.botonNav{
+background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+width: 110px;
+}
+.botonNav:hover{
+    background: #7700BE;
+}
+
+footer{
+    background-color: #2B0DBF;
+    height: 110px;
+}
+
+.footerMenu{
+    color: whitesmoke;
+}
+
+#HTMLcatalogo{
+    background-image:url(../images/htmlCatalogo.jpg);
+    background-size: 100% 100%;
+    backdrop-filter: blur(6px);
+
+}
+#javaCatalogo{
+    background-image:url(../images/javaCatalogo.jpg);
+    background-size: 100% 100%;
+    backdrop-filter: blur(6px);
+}
+#pythonCatalogo{
+background-image:url(../images/pythonCatalogo.png);
+    background-size: 100% 100%;
+}
+#derechoReservado{
+    color: whitesmoke;
+    margin-left: 10px;
+}
+.contenido{
+    background-color: #d3d3d3;
+    height: auto;
+   margin-top: 130px;
+}
+
+p{
+  margin: 0px;
+  padding-top: 10px;
+}
+
+a#colorFooter{
+  color: rgb(250, 248, 248);
+}
+
+video{
+       width: 50%;
+       height: 50%;
+       margin-top: 2%;
+
+}
+
+.contenedor-video{
+    position:  relative;
+    overflow:  hidden;
+    padding-top: 70.25%;
+    border:  3px solid red; 
+
+}
+
+.ol { list-style: upper-roman; }
+
+.ContenidoPregunas{
+    border: solid;
+    background: linear-gradient(to right,#8570e2,#0927ce);
+    height: 50%;
+    width: 60%;
+    overflow: scroll;
+
+}
