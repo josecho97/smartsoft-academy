@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <title>SmartSoft Academy</title>
+    <link rel="shortcut icon" href="images/Logo.ico">
+
+
+    <script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
+      <script src="../js/verificarSesion2.js"></script>	
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/modulo.css" />
+    <script defer src="../js/menu.js"></script>
+  	<!--<script src="./appProgreso.js"></script>-->
+
+  	<style type="text/css">
+
+    .conti{
+		width: 20%;
+		margin: 0 auto;
+	}
+	.barraStile{
+		border-radius: 10%;
+		width: 100%;
+	}
+	
+
+	.barraStile::-webkit-progress-bar{
+        background:#fff;
+
+	}
+
+	.barraStile::-webkit-progress-value{
+        background: rgb(19, 7, 185);
+
+	}
+
+	</style>
+
+
+  </head>
+  
+
+
+
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+	    class = "imgLogo";
+            height="60"
+            width="53"
+            src="../images/Logo.png"
+            alt="logo"
+          />
+          <div class="logotype">SMARTSOFT ACADEMY</div>
+        </a>
+
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="../images/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="../images/close-icon.svg" alt="cerrar menú" />
+          </button>
+         <li><a href="../catalogo.html">Inicio</a></li>
+          <li><a href="../misCursos.html">Mis Cursos</a></li>
+          <li><a href="../perfil.php">Mi Perfil</a></li>
+          <li><a href="../php/cerrarSesion.php">Cerrar Sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section class="contenido">
+      <div class="titulo">
+          <h1 class="titulo-title">JAVA PARA PRINCIPIANTES</h1>
+
+
+			<div class="imagenCursoHt">
+  				<img src="../images/fondoJava.png" id="imglogin">
+			</div>
+      </div>
+
+      <!--  Dani barra de progreso -->
+				 <div class="conti">
+				  Progreso: 		  
+	   		  <progress value="0" max="100" id="barra" class="barraStile"></progress>
+	        
+	        </div>	
+			<!-- fin barra de progreso -->
+
+      <div class="lista">
+				<section id="carrusel" class="container">
+			
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+	  		<div id="moduloCurso" class="container">
+	  
+
+	       <div class="contenidoModulos">
+				<br>
+					<h3>MÓDULO 1 - INTRODUCCIÓN</h3>
+	   		<br>
+				
+
+				<p>
+					<!-- Dani cambiar los input-->
+					<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta1" id="idchkProyecto">
+					<a href="pantalla1.1Java.html" class="formatoModulos">1.1 - Fundamentos</a><br><br>
+					<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta2" id="idchkProyecto1"> 
+					<a href="pantalla1.2Java.html" class="formatoModulos">1.2 - ¿Qué es Java?</a><br><br>
+					
+					<!--<input type="checkbox" class="CheckedAK" checked name="m1" value="gusta"> <--></-->
+					<!--<p id="mensaje">xx</p> -->
+					
+					<!--<script type="text/javascript">
+							$(document.querySelectorAll(".CheckedAK")).click(function() { //Creamos la Funcion del Click
+  						var checked = $(".CheckedAK:checked").length; //Creamos una Variable y Obtenemos el Numero de Checkbox que esten Seleccionados
+							$("#mensaje").text("Tienes Actualmente " + checked + " Checkbox " + "Seleccionado(s)"); //Asignamos a la Etiqueta <p> el texto de cuantos Checkbox ahi Seleccionados(Combinando la Variable)
+							actualizarProgreso(checked);
+							})
+						  .trigger("click"); //Simulamos el Evento Click(Desde el Principio, para que muestre cuantos ahi Seleccionados)
+						  
+						  function actualizarProgreso(checkedActualizar){
+						  	
+						  		document.getElementById("barra").value = checkedActualizar*33;
+						  	
+						  }
+
+					</script> -->
+
+				</p>
+					<!--<button type="button" class="boton">Dar exámen módulo 1</button>-->
+			</div>
+
+			<div class="contenidoModulos">
+				<h3>MÓDULO 2 - INSTALACION Y PRIMER PROGRAMA</h3>
+				<br>
+				<p>
+	
+					<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto2"> <a href="pantalla2.1Java.html" class="formatoModulos">2.1 - Instalar Java</a><br><br>
+					<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto3"> <a href="pantalla2.2Java.html" class="formatoModulos">2.2 - Instalar Intellij IDEA</a><br><br>
+					<input type="checkbox" class="CheckedAK" checked="false"name="m1" value="gusta" id="idchkProyecto4"> <a href="pantalla2.3Java.html" class="formatoModulos">2.3 - Hola Mundo</a><br><br>
+					<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto5"> <a href="pantalla2.4Java.html" class="formatoModulos">2.4 - Variables</a><br><br>
+					<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto6"> <a href="pantalla2.5Java.html" class="formatoModulos">2.5 - Leer datos desde teclado</a><br><br>
+				</p>
+					<!--<button type="button" class="boton">Dar exámen módulo 1</button> -->
+			</div>
+
+				<div class="contenidoModulos">
+					<h3>MÓDULO 3 - CICLOS Y CONDICIONALES</h3>
+					<br>
+					<p>
+						<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto7"> <a href="pantalla3.1Java.html" class="formatoModulos">3.1 - Ciclos de repetición</a><br><br>
+						<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto8"> <a href="pantalla3.2Java.html" class="formatoModulos">3.2 - Sentencias condicionales</a><br><br>
+					  </p>
+						<!--<button type="button" class="boton">Dar exámen módulo 1</button>-->
+		</div>
+				<div class="contenidoModulos">
+					<h3>MÓDULO 4 - CREACIÓN DE UN NUEVO PROYECTO</h3>
+					<br>
+					<p>
+						<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto9"> <a href="pantalla4.1Java.html" class="formatoModulos">4.1 - ¿Qué vamos a programar?</a><br><br>
+						<input type="checkbox" class="CheckedAK" checked="false" name="m1" value="gusta" id="idchkProyecto10"> <a href="pantalla3.2Java.html" class="formatoModulos">4.2 - Crear el proyecto</a><br><br>
+					  </p>
+						<!--<button type="button" class="boton">Dar exámen módulo 1</button>-->
+						<div class="mensaje" id="java"></div>
+
+				</div>
+
+          </div>
+         </div>
+	</section>
+
+      </div>
+    </section>
+    
+     <footer>
+	    <div id="volverAlHeader">
+		<p align="center" class="foot"><b><a class="textFooter" href="#cabecera">SMARTSOFT ACADEMY</a></b></p>
+		<div  class = "iconos">
+		<a href="https://www.facebook.com/SmartSoft_Academy-111611517995192/" target="_blank"><img src="../images/facebook.png" width="30px"></a>
+		<a href="https://www.instagram.com/smartsoft_academy?r=nametag" target="_blank"><img src="../images/insta.png" width="40px"></a>
+		<a href="https://wa.me/qr/2O6LHOCTYQNWD1" target="_blank"><img src="../images/whatsapp.png" width="30px"></a>
+		</div>
+		<div align="center"><p class="derechos">&#169; SmartSoft Academy 2021</p></div>
+     </footer>
+
+     	 <!-- jQuery -->
+    <!-- Dani conectar js para progreso -->
+    <script src="../js/actualizarProgresoJ.js"></script> 
+      
+  </body>
+
+
+  
+
+
+
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>SmartSoft Academy</title>
+    <link rel="shortcut icon" href="images/Logo.ico">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/verificarSesion2.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/modulo.css" />
+    <script defer src="../js/menu.js"></script>
+    <!--- EN ESTA PARTE ESTA LO DE LA BARRA  >-->
+
+    <style type="text/css">
+        .conti {
+            width: 20%;
+            margin: 0 auto;
+        }
+        
+        .barraStile {
+            border-radius: 10%;
+            width: 100%;
+        }
+        
+        .barraStile::-webkit-progress-bar {
+            background: #fff;
+        }
+        
+        .barraStile::-webkit-progress-value {
+            background: rgb(19, 7, 185);
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img class="imgLogo" ; height="60" width="53" src="../images/Logo.png" alt="logo" />
+                <div class="logotype">SMARTSOFT ACADEMY</div>
+            </a>
+
+            <button class="open-menu" aria-label="Abrir menú">
+          <img src="../images/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar menú">
+            <img src="../images/close-icon.svg" alt="cerrar menú" />
+          </button>
+                <li><a href="../catalogo.html">Inicio</a></li>
+                <li><a href="../perfil.php">Mi Perfil</a></li>
+ 		<li><a href="../misCursos.html">Mis Cursos</a></li>
+          <li><a href="../php/cerrarSesión.php">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contenido">
+        <div class="titulo">
+            <h1 class="titulo-title">HTML DESDE CERO</h1>
+
+            <div class="imagenCursoHt">
+                <img src="../images/fondoHtml.png" id="imglogin">
+            </div>
+        </div>
+        <!--- EN ESTA PARTE ESTA LO DE LA BARRA  >-->
+	<h6 class="titProgeso">Progreso:</h6>
+
+	<div class = "barrita">
+		<div class="mensaje3" id="barra"></div>
+	</div>
+
+        <!---
+ 1       <progress max="100"></progress>
+		<meter value="100"></meter>-->
+        <div class="lista">
+            <section id="carrusel" class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div id="moduloCurso" class="container">
+                        <div class="contenidoModulos">
+                            <br>
+                            <h3>MÓDULO 1 - INTRODUCCIÓN</h3>
+                            <br>
+                            <p>
+                                <!--PARTE DE LOS CHECK>-->
+				<div class="listas">
+                                 <div class="imagenTick">
+              				 <div class="mensaje2" id="00"></div>
+            			</div>
+                                <a href="pantalla0.php" class="formatoModulos formatoModulosHTML">1.1 - Instalación de Visual Studio</a><br><br>
+				</div>
+
+
+				<div class="listas">
+                                 <div class="imagenTick">
+              				 <div class="mensaje2" id="01"></div>
+            			</div>
+                                <a href="pantalla1.php" class="formatoModulos formatoModulosHTML">1.2 - Introducción</a><br><br>
+				</div>
+
+                            </p>
+                            <!--<button type="button" class="boton">Dar exámen módulo 1</button>-->
+                        </div>
+
+                        <div class="contenidoModulos">
+                            <h3>MÓDULO 2 - ETIQUETAS</h3>
+                            <br>
+                            <p>
+                                <!--PARTE DE LOS CHECK>-->
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="02"></div>
+            			</div>
+				<a href="pantalla2.php" class="formatoModulos formatoModulosHTML">2.1 - Etiquetas para textos</a><br><br>
+                                </div>
+
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="03"></div>
+            			</div>
+				<a href="pantalla3.php" class="formatoModulos formatoModulosHTML">2.2 - Enlaces</a><br><br>
+                                
+                                </div>
+
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="04"></div>
+            			</div>
+				<a href="pantalla4.php" class="formatoModulos formatoModulosHTML">2.3 - Listas</a><br><br>
+                                
+                                </div>
+				
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="05"></div>
+            			</div>
+				<a href="pantalla5.php" class="formatoModulos formatoModulosHTML">2.4 - Imagenes</a><br><br>
+                               
+                                </div>
+
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="06"></div>
+            			</div>
+				 <a href="pantalla6.php" class="formatoModulos formatoModulosHTML">2.5 - Tablas</a><br><br>
+                                </div>
+
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="07"></div>
+            			</div>
+                                <a href="pantalla7.php" class="formatoModulos formatoModulosHTML">2.6 - Formularios</a><br><br>
+                                </div>
+	
+				
+
+
+				
+
+                            </p>
+                            <!--<button type="button" class="boton">Dar exámen módulo 2</button>-->
+                        </div>
+                        <div class="contenidoModulos">
+                            <h3>MÓDULO 3 - METADATOS Y OTRAS ETIQUETAS</h3>
+                            <br>
+                            <p>
+
+
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="08"></div>
+            			</div>
+					<a href="pantalla8.php" class="formatoModulos formatoModulosHTML">3.1 - Creando una estructura de contenido</a><br><br>
+                                
+                                </div>
+	
+				<div class="listas">
+				<div class="imagenTick">
+              				 <div class="mensaje2" id="09"></div>
+            			</div>
+					<a href="pantalla9.php" class="formatoModulos formatoModulosHTML">3.2 - Metadatos y otras etiquetas</a><br><br>
+                                </div>
+	
+                              
+                                <!--<input type="checkbox" name="m2" value="gusta"> Sección 2 - Elementos Semánticos en HTML<br><br>
+			<input type="checkbox" name="m2" value="gusta"> Sección 2 - Clase Final<br><br>-->
+
+                            </p>
+                            <!--<button type="button" class="boton">Dar exámen módulo 3</button>-->
+				<div class="mensaje" id="html"></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <footer>
+        <div id="volverAlHeader">
+            <p align="center" class="foot"><b><a class="textFooter" href="#cabecera">SMARTSOFT ACADEMY</a></b></p>
+            <div class="iconos">
+                <a href="https://www.facebook.com/SmartSoft_Academy-111611517995192/" target="_blank"><img src="../images/facebook.png" width="30px"></a>
+                <a href="https://www.instagram.com/smartsoft_academy?r=nametag" target="_blank"><img src="../images/insta.png" width="40px"></a>
+                <a href="https://wa.me/qr/2O6LHOCTYQNWD1" target="_blank"><img src="../images/whatsapp.png" width="30px"></a>
+            </div>
+            <div align="center">
+                <p class="derechos">&#169; SmartSoft Academy 2021</p>
+            </div>
+    </footer>
+       <script src="../js/actualizarProgresoH.js"></script> 
+	<script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
+  	<script src="../js/moduloCompleto.js"></script>	
+</body>
+
+</html>
