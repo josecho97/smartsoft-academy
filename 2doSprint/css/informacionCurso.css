@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background: #24C6DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'PT Sans', sans-serif;
+}
+
+#cabecera{
+	background-image: url(../images/fondopurpura.jpg);
+	background-size: 100% 100%;
+	height: 220px;
+	margin-top:0%;
+}
+ul{
+	margin: 0px;
+}
+
+h1{
+	text-align: center	;
+	color: white;
+	font-size: 70px;
+	margin-left: 15%;
+}
+
+#logo{
+	width: 142px;
+}
+
+#id_aprendisaje{
+	margin-left: 1%;
+
+}
+
+main{
+margin-bottom: 2%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.reinicio{
+	clear: both;
+}
+
+#colorFooter{
+	color: black;
+}
+#volverAlHeader{
+	animation: slideOutUp;
+}
+
+
+#curso{
+    color: #fff;
+    display: inline-block;
+    /*position: relative;*/
+
+}
+#marco1{
+   background-color: #24C6DC;
+    padding: 20px 30px;
+    width:100%;
+    height: 820px;
+    border: 2px solid #000;
+    /*left: 80px;*/
+}
+.grid1{
+    display: grid;
+    width: 100%;
+    height: 40%;
+    grid-template-rows: 100%;
+    grid-template-columns: 74% 30%;
+}
+.grid2{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-rows: 400px;
+    grid-template-columns: 37% 37% 20%;
+}
+.item{
+    
+}
+.item2{
+}
+#marcoDescripcion{
+    /*display:inline-block;*/
+    background-color: #514A9D;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    overflow-y: scroll;
+    padding: 20px;
+}
+#marcoDurCom{
+    width: 100%;
+    text-align: center;
+    padding:20px 20px;
+    
+}
+h3{
+    font-size: 20px;
+}
+#id_complejidad{
+    display: inline-block;
+    text-align: center;
+}
+#id_duracion{
+    display: inline-block;
+    text-align: center;
+}
+#marco4{
+    width: 100%;
+    height: 300px;
+    padding: 4px;
+}
+.queAprenderas{
+    height: 330px;
+    padding: 3px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.queAprenderas::-webkit-scrollbar{
+    width: 2px;
+    background: #24C6DC;
+}
+
+.conocimientosPrevios{
+    height: 330px;
+    padding: 3px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.conocimientosPrevios::-webkit-scrollbar{
+    width: 2px;
+    background: #24C6DC;
+}
+#marco5{
+    width: 100%;
+    height: 300px;
+    padding: 4px;
+}
+
+
+.botonNav{
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    width: 100px;
+    }
+
+@media Screen and (max-width: 800px){
+    #marco1{
+        background-color: #24C6DC;
+         padding: 20px 30px;
+         width:100%;
+         height: 1000px;
+         border: 2px solid #000;
+         /*left: 80px;*/
+     }
+    h3{
+        font-size: 20px;
+    }
+    .grid1{
+        display: grid;
+        grid-gap: 0px;
+        width: 100%;
+        height: 400px;
+        grid-template-rows: 80% 20%;
+        grid-template-columns: 100%;
+    }
+    .grid2{
+        display: grid;
+        width: 100%;
+        height: 500px;
+        grid-template-rows: 45% 45% 10%;
+        grid-template-columns: 100%;
+    }
+    
+    .grid1 #marcoDescripcion{
+        /*display:inline-block;*/
+        background-color: #514A9D;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+    #marco4{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 4px;
+       
+    }
+    #marco5{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 4px;
+        
+    }
+    .queAprenderas{
+        height: 150px;
+        padding: 3px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .queAprenderas::-webkit-scrollbar{
+        width: 2px;
+        background: #514A9D;
+    }
+    
+    .conocimientosPrevios{
+        height: 150px;
+        padding: 3px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .conocimientosPrevios::-webkit-scrollbar{
+        width: 2px;
+        background: #514A9D;
+    }
+}
+
